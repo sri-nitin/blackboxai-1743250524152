@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Tasks | TaskEase</title>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="font-inter bg-gray-50">
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex items-center">
+                        <i class="fas fa-hands-helping text-indigo-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">TaskEase</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-500 hover:text-gray-700 px-3 py-2">My Tasks</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-700 px-3 py-2">Messages</a>
+                    <div class="relative">
+                        <button class="flex items-center space-x-1 text-gray-500 hover:text-gray-700">
+                            <span>John D.</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+            <h1 class="text-2xl font-bold text-gray-900 mb-4 md:mb-0">Available Tasks Near You</h1>
+            <div class="flex space-x-2">
+                <div class="relative">
+                    <select class="appearance-none bg-white border border-gray-300 rounded-md pl-3 pr-8 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        <option>All Categories</option>
+                        <option>Shopping</option>
+                        <option>Errands</option>
+                        <option>Cleaning</option>
+                        <option>Moving Help</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </div>
+                </div>
+                <div class="relative">
+                    <select class="appearance-none bg-white border border-gray-300 rounded-md pl-3 pr-8 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        <option>Sort By</option>
+                        <option>Newest</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Distance</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="taskList">
+            <!-- Task cards will be dynamically inserted here -->
+            <div class="bg-white rounded-lg shadow-md p-6 task-card">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <span class="inline-block px-2 py-1 text-xs font-semibold bg-indigo-100 text-indigo-800 rounded-full">Shopping</span>
+                    </div>
+                    <span class="text-sm text-gray-500">0.5 miles away</span>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Grocery Shopping</h3>
+                <p class="text-gray-600 mb-4">Need someone to pick up groceries from Whole Foods. List will be provided.</p>
+                <div class="flex justify-between items-center">
+                    <span class="font-bold text-indigo-600">$25</span>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 task-card">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <span class="inline-block px-2 py-1 text-xs font-semibold bg-green-100 text-green-800 rounded-full">Errands</span>
+                    </div>
+                    <span class="text-sm text-gray-500">1.2 miles away</span>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Dry Cleaning Pickup</h3>
+                <p class="text-gray-600 mb-4">Pick up dry cleaning from Main St Cleaners. 3 shirts and 2 pants.</p>
+                <div class="flex justify-between items-center">
+                    <span class="font-bold text-indigo-600">$15</span>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../app.js"></script>
+    <script src="tasks.js"></script>
+</body>
+</html>
