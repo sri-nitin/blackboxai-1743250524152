@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task | TaskEase</title>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="font-inter bg-gray-50 min-h-screen flex items-center">
+    <div class="max-w-md w-full mx-auto p-6">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="text-center mb-8">
+                <a href="../index.html" class="flex items-center justify-center">
+                    <i class="fas fa-hands-helping text-indigo-600 text-3xl mr-2"></i>
+                    <span class="text-2xl font-bold text-gray-900">TaskEase</span>
+                </a>
+                <h1 class="text-xl font-semibold mt-4">Create a New Task</h1>
+                <p class="text-gray-600">Fill in the details below to post your task.</p>
+            </div>
+
+            <form id="taskForm" class="space-y-4">
+                <div>
+                    <label for="title" class="block text-sm font-medium text-gray-700 mb-1">Task Title</label>
+                    <input type="text" id="title" name="title" required
+                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                        placeholder="e.g., Grocery Shopping">
+                </div>
+
+                <div>
+                    <label for="description" class="block text-sm font-medium text-gray-700 mb-1">Description</label>
+                    <textarea id="description" name="description" required
+                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                        placeholder="Provide details about the task..."></textarea>
+                </div>
+
+                <div>
+                    <label for="budget" class="block text-sm font-medium text-gray-700 mb-1">Budget ($)</label>
+                    <input type="number" id="budget" name="budget" required
+                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                        placeholder="e.g., 20">
+                </div>
+
+                <div>
+                    <label for="location" class="block text-sm font-medium text-gray-700 mb-1">Location</label>
+                    <input type="text" id="location" name="location" required
+                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                        placeholder="e.g., 123 Main St, City">
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Post Task
+                </button>
+            </form>
+
+            <div class="mt-6 text-center">
+                <p class="text-sm text-gray-600">
+                    Want to go back? <a href="../index.html" class="font-medium text-indigo-600 hover:text-indigo-500">Return to Home</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../app.js"></script>
+    <script src="tasks.js"></script>
+</body>
+</html>
