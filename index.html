@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskEase - Daily Task Assistance</title>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-inter bg-gray-50">
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center">
+                        <i class="fas fa-hands-helping text-indigo-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">TaskEase</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-500 hover:text-gray-700 px-3 py-2">How it works</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-700 px-3 py-2">Browse Tasks</a>
+                    <a href="auth/login.html" class="text-gray-500 hover:text-gray-700 px-3 py-2">Log In</a>
+                    <a href="auth/signup.html" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-indigo-700 text-white py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="md:flex md:items-center md:justify-between">
+                    <div class="md:w-1/2">
+                        <h1 class="text-4xl font-bold mb-6">Get your daily tasks done, hassle-free</h1>
+                        <p class="text-xl mb-8">From grocery shopping to dry cleaning pickup, find reliable help for all your errands.</p>
+                        <div class="flex space-x-4">
+                            <a href="tasks/create.html" class="bg-white text-indigo-700 px-6 py-3 rounded-md font-medium hover:bg-gray-100">Post a Task</a>
+                            <a href="tasks/browse.html" class="border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-indigo-700">Browse Tasks</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 mt-10 md:mt-0">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Person helping with tasks" class="rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12">How TaskEase Works</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-tasks text-indigo-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">1. Post Your Task</h3>
+                        <p class="text-gray-600">Describe what you need done, set your budget, and when you need it completed.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-user-check text-indigo-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">2. Choose Your Helper</h3>
+                        <p class="text-gray-600">Review profiles and choose the best person for your task based on skills and reviews.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-check-circle text-indigo-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">3. Get It Done</h3>
+                        <p class="text-gray-600">Your task gets completed safely and securely, with payment only released when you're satisfied.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">TaskEase</h3>
+                    <p class="text-gray-400">Making daily life easier one task at a time.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Safety</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Community Guidelines</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 TaskEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
