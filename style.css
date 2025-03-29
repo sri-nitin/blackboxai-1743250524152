@@ -1,0 +1,66 @@
+/* Custom styles to complement Tailwind */
+body {
+    line-height: 1.6;
+}
+
+/* Animation for buttons */
+.btn-animate {
+    transition: all 0.3s ease;
+}
+
+.btn-animate:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Task card styling */
+.task-card {
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.task-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input styling */
+.form-input {
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.form-input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+    }
+    
+    .hero-text {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+}
+
+/* Loading spinner */
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
